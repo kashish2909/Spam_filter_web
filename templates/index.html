@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Spam Filter</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<style>
+			.footer {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 20%;
+				text-align: center;
+			}
+			</style>
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<center><h1>
+				NLP Project (UML602)
+			</h1></center>
+		</div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6" style="margin-top:200">
+			<form role="form" action="http://127.0.0.1:5000/result" enctype="multipart/form-data" method="POST">
+				<div class="form-group">
+					 
+					<label for="exampleInputEmail1">
+						Input text
+					</label>
+					<textarea type="text" class="form-control" id="exampleInputEmail1" name="input_text"></textarea>
+				</div> 
+				<button type="submit" class="btn btn-primary">
+					Predict
+				</button>
+			</form>
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<center><div>This text is: {{ans}}</div></center>
+</div>
+<footer class="footer">
+	Made by:<br/>
+	Kashish Bansal (101603155)<br/>
+	Kashish Mittal (101603156)
+</footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
